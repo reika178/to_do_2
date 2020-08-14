@@ -5,7 +5,6 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'TO DO TEST'),
     );
   }
 }
@@ -40,18 +39,18 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           children: <Widget>[
-            Text(
-              '下記があなたが入力したテキストです。',
-            ),
-            Text(
-              "You input : ${this.m_inputedValue}"),
+            // Text(
+            //   '下記があなたが入力したテキストです。',
+            // ),
+            // Text(
+            //   "You input : ${this.m_inputedValue}"),
               TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: "テキストボックス",
-                  hintText: "まぁ何か入力してみてよ！",
+                  // labelText: "new",
+                  hintText: "new",
                 ),
-                maxLength: 10,
+                maxLength: 30,
                 onChanged: (text) {
                   if (text.length > 0) {
                     setState(() {
